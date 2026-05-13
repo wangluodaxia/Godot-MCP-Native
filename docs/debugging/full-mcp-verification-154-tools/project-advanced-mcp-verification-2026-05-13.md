@@ -4,7 +4,7 @@
 **环境：** Godot 4.6.1.stable, MCP HTTP 模式 (localhost:9080)
 **场景：** res://TestScene.tscn (Node3D 根节点)
 **验证方式：** 手动启用 Project-Advanced 23 个工具，通过 MCP 客户端逐个调用验证
-**前置文档：** `docs/debugging/core-tools-mcp-verification-2026-05-12.md`（30 核心 + 35 补充已验证）
+**前置文档：** `docs/debugging/full-mcp-verification-154-tools/core-tools-mcp-verification-2026-05-12.md`（30 核心 + 35 补充已验证）
 
 ---
 

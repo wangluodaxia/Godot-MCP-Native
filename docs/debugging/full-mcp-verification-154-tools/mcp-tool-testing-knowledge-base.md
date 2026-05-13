@@ -590,8 +590,8 @@ CodeArts diff 会在 `.codeartsdoer/temp/` 生成 `.gd` 备份文件，被 Godot
 
 | 文档 | 路径 | 内容 |
 |------|------|------|
-| Core + 补充验证 | `docs/debugging/core-tools-mcp-verification-2026-05-12.md` | 30 核心 + 35 补充工具详细验证 |
-| Project-Advanced 验证 | `docs/debugging/project-advanced-mcp-verification-2026-05-13.md` | 23 Project-Advanced 工具验证 |
-| Debug-Advanced 验证 | `docs/debugging/debug-advanced-mcp-verification-2026-05-13.md` | 67 Debug-Advanced 工具验证 |
-| 补充验证 | `docs/debugging/full-verification-supplement-2026-05-13.md` | 综合测试场景 + 最终汇总 |
-| 本文档 | `docs/debugging/mcp-tool-testing-knowledge-base.md` | 测试知识库（本文档） |
+| Core + 补充验证 | `docs/debugging/full-mcp-verification-154-tools/core-tools-mcp-verification-2026-05-12.md` | 30 核心 + 35 补充工具详细验证 |
+| Project-Advanced 验证 | `docs/debugging/full-mcp-verification-154-tools/project-advanced-mcp-verification-2026-05-13.md` | 23 Project-Advanced 工具验证 |
+| Debug-Advanced 验证 | `docs/debugging/full-mcp-verification-154-tools/debug-advanced-mcp-verification-2026-05-13.md` | 67 Debug-Advanced 工具验证 |
+| 补充验证 | `docs/debugging/full-mcp-verification-154-tools/full-verification-supplement-2026-05-13.md` | 综合测试场景 + 最终汇总 |
+| 本文档 | `docs/debugging/full-mcp-verification-154-tools/mcp-tool-testing-knowledge-base.md` | 测试知识库（本文档） |

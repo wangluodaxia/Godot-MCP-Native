@@ -4,9 +4,9 @@
 **环境：** Godot 4.6.1.stable, MCP HTTP 模式 (localhost:9080)
 **测试场景：** res://test/MCPComprehensiveTest.tscn (包含 AnimationPlayer/AnimationTree/Control/MeshInstance3D+StandardMaterial3D/ShaderMesh+ShaderMaterial/OldTileMap(TileMap))
 **前置文档：**
-- `docs/debugging/core-tools-mcp-verification-2026-05-12.md`（30 核心 + 35 补充）
-- `docs/debugging/project-advanced-mcp-verification-2026-05-13.md`（Project-Advanced 23）
-- `docs/debugging/debug-advanced-mcp-verification-2026-05-13.md`（Debug-Advanced 67）
+- `docs/debugging/full-mcp-verification-154-tools/core-tools-mcp-verification-2026-05-12.md`（30 核心 + 35 补充）
+- `docs/debugging/full-mcp-verification-154-tools/project-advanced-mcp-verification-2026-05-13.md`（Project-Advanced 23）
+- `docs/debugging/full-mcp-verification-154-tools/debug-advanced-mcp-verification-2026-05-13.md`（Debug-Advanced 67）
 
 ---
 

@@ -5,8 +5,8 @@
 **场景：** res://TestScene.tscn (Node3D 根节点, 运行中)
 **验证方式：** 手动启用 Debug-Advanced 67 个工具，启动项目后通过 MCP 客户端逐个调用验证
 **前置文档：**
-- `docs/debugging/core-tools-mcp-verification-2026-05-12.md`（30 核心 + 35 补充已验证）
-- `docs/debugging/project-advanced-mcp-verification-2026-05-13.md`（Project-Advanced 23 工具已验证）
+- `docs/debugging/full-mcp-verification-154-tools/core-tools-mcp-verification-2026-05-12.md`（30 核心 + 35 补充已验证）
+- `docs/debugging/full-mcp-verification-154-tools/project-advanced-mcp-verification-2026-05-13.md`（Project-Advanced 23 工具已验证）
 
 ---
 

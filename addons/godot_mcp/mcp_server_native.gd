@@ -180,6 +180,9 @@ func _enter_tree() -> void:
 	# 注册所有工具
 	_register_all_tools()
 	
+	# Register MCPRuntimeProbe as autoload singleton for runtime debugger communication
+	_ensure_runtime_probe_autoload()
+	
 	# 注册所有资源
 	_register_all_resources()
 	
@@ -215,6 +218,9 @@ func _exit_tree() -> void:
 		EditorInterface.get_editor_main_screen().remove_child(_main_panel)
 		_main_panel.queue_free()
 		_main_panel = null
+
+	# Remove MCPRuntimeProbe autoload on plugin exit
+	_remove_runtime_probe_autoload()
 
 	if _debugger_bridge:
 		remove_debugger_plugin(_debugger_bridge)
@@ -414,6 +420,23 @@ func _stop_native_server() -> void:
 	_log_info("Stopping native MCP server...")
 	_native_server.stop()
 	_log_info("Native MCP Server stopped")
+
+func _ensure_runtime_probe_autoload() -> void:
+	# Register MCPRuntimeProbe as an Autoload singleton via ProjectSettings.
+	# The "*" prefix marks it as a global singleton that survives scene changes.
+	var autoload_key: String = "autoload/MCPRuntimeProbe"
+	var autoload_path: String = "*res://addons/godot_mcp/runtime/mcp_runtime_probe.gd"
+	if not ProjectSettings.has_setting(autoload_key):
+		ProjectSettings.set_setting(autoload_key, autoload_path)
+		ProjectSettings.save()
+		_log_info("MCPRuntimeProbe autoload registered")
+
+func _remove_runtime_probe_autoload() -> void:
+	var autoload_key: String = "autoload/MCPRuntimeProbe"
+	if ProjectSettings.has_setting(autoload_key):
+		ProjectSettings.clear(autoload_key)
+		ProjectSettings.save()
+		_log_info("MCPRuntimeProbe autoload removed")
 
 func _get_tools_count() -> int:
 	if not _native_server:
